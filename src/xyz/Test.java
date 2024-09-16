@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Test {
 
 	public static void main(String[] args) {
-	int num = 0, a = 1;
+	int num;
 	System.out.println("Please enter student marks");
 	Scanner sc = new Scanner(System.in);
 	num = sc.nextInt();
