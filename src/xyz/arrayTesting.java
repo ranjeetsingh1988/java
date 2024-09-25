@@ -3,13 +3,20 @@ import java.util.Scanner;
 public class arrayTesting {
 
 	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		float sum=sc.nextFloat();
 		float[] test= {100,90,75,75,50};
-		float sum=0;
+		boolean isInArray = false;
 		for(float elements:test) {
-			sum=sum+elements;
+			if(sum==elements) {
+				isInArray = true;
+				break;
+			}
 		}
-		System.out.println("The Value Of The Sum Is:" + sum);
-
+		if(isInArray) {
+		System.out.println("The Value is Present in Array");
+		}else
+			System.out.println("The Value is Not Present in Array");
 	}
 
 }
